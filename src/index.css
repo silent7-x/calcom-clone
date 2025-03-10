@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme {
+  --color-cod-grey: #1e1a1a;
+}
