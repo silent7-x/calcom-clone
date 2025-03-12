@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cod-grey: #1e1a1a;
+  --color-background: black;
+  --color-foreground: white;
+  --color-muted-foreground: #a6a6a6;
+  --color-accent: #44403c;
+  --color-card: #1e1a1a;
 }

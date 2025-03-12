@@ -1,47 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="min-h-full">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cal.com clone</title>
     <link href="/src/index.css" rel="stylesheet" />
-    <title>Vite App</title>
   </head>
-  <body class="min-h-full w-full">
-    <div class="h-full w-full flex justify-center items-center text-white bg-cod-grey">
-      <!--Header-->
-      <header class="bg-cod-grey p-6 flex flex-col gap-2">
-        <img
-          src="/public/pfp.png"
-          alt="profile picture"
-          class="size-10 rounded-full"
-        />
-        <p class="text-stone-400 text-base">Silen7 ❌</p>
-        <p class="text-xl spacing tracking-wider">Avis Formation</p>
-        <p class="text-stone-400 text-sm">
-          Prendre rendez-vous pour passer 15 minutes avec moi durant lesquelles
-          je récolterai ton avis sur mes formations et on pourra partager sur ce
-          que tu as fais etc...
-        </p>
-        <div class="flex flex-col gap-2 mt-6">
-          <div class="flex items-center gap-2 py-1 px-2 -mx-2">
-            <i data-lucide="clock" class="size-4 text-stone-400"></i>
-            <p class="text-sm text-stone-400">15mn</p>
+
+  <body class="min-h-full bg-background text-foreground">
+    <!--
+        class="h-screen flex-col w-full flex md:items-center md:justify-center"
+      -->
+    <main class="h-screen w-full flex flex-col items-center justify-center">
+      <div class="flex flex-col justify-center items-center w-full bg-card">
+        <!--Header-->
+        <header class="bg-cod-grey p-6 flex flex-col gap-2">
+          <img
+            src="/pfp.png"
+            alt="profile picture"
+            class="size-10 rounded-full"
+          />
+          <p class="text-muted-foreground text-base">Silen7 ❌</p>
+          <p class="text-xl spacing tracking-wider">Audit appointment</p>
+          <p class="text-muted-foreground text-sm">
+            Book an appointment to spend 60 minutes with me, during which we
+            will discuss your blockchain project to be audited and share your
+            expectations, among other things ...
+          </p>
+          <div class="flex flex-col gap-2 mt-6">
+            <div class="flex items-center gap-2 py-1 px-2 -mx-2">
+              <i data-lucide="clock" class="size-4 text-muted-foreground"></i>
+              <p class="text-sm text-muted-foreground">60 mn</p>
+            </div>
+            <div class="flex items-center gap-2 py-1 px-2 -mx-2">
+              <img
+                src="/google-meet.svg"
+                class="size-4 text-muted-foreground"
+              />
+              <p class="text-sm text-muted-foreground">Google Meet</p>
+            </div>
+            <div
+              class="flex items-center gap-2 py-1 px-2 -mx-2 hover:bg-accent rounded-md transition w-fit cursor-pointer"
+            >
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+              <p class="text-sm text-muted-foreground">Europe/Lisbon</p>
+              <i
+                data-lucide="chevron-down"
+                class="size-6 text-muted-foreground"
+              ></i>
+            </div>
           </div>
-          <div class="flex items-center gap-2 py-1 px-2 -mx-2">
-            <img src="/public/google-meet.svg" class="size-4 text-stone-400"></img>
-            <p class="text-sm text-stone-400">Google Meet</p>
+        </header>
+
+        <!--Calendar-->
+        <div class="p-6 w-full">
+          <div class="flex items-center gap-2">
+            <p class="mr-auto">
+              March <span class="text-muted-foreground">2025</span>
+            </p>
+            <button
+              class="flex items-center justify-center hover:bg-accent transition rounded-md mr-2"
+            >
+              <i
+                data-lucide="chevron-left"
+                class="size-5 text-muted-foreground"
+              ></i>
+            </button>
+            <button
+              class="flex items-center justify-center hover:bg-accent transition rounded-md"
+            >
+              <i
+                data-lucide="chevron-right"
+                class="size-5 text-muted-foreground"
+              ></i>
+            </button>
           </div>
-          <div class="flex items-center gap-2 py-1 px-2 -mx-2 hover:bg-stone-700 rounded-md transition w-fit cursor-pointer">
-            <i data-lucide="globe" class="size-4 text-stone-400"></i>
-            <p class="text-sm text-stone-400">Europe/Lisbon</p>
-            <i data-lucide="chevron-down" class="size-6 text-stone-400"></i>
+          <div
+            class="grid grid-cols-7 gap-2 text-sm text-muted-foreground text-center"
+          >
+            <span>MON</span>
+            <span>TUE</span>
+            <span>WED</span>
+            <span>THU</span>
+            <span>FRI</span>
+            <span>SAT</span>
+            <span>SUN</span>
           </div>
         </div>
-      </header>
-    </div>
-
+      </div>
+    </main>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
