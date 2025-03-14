@@ -9,15 +9,16 @@
   </head>
 
   <body class="min-h-full bg-background text-foreground">
+    <div class="hidden md:block fixed top-4 items-center gap-4 right-4"></div>
     <main
       class="h-screen w-full flex flex-col md:items-center md:justify-center"
     >
       <div
-        class="w-full bg-card mx-auto flex flex-col justify-center md:w-fit md:flex-row md:rounded-md md:h-[480px] md:overflow-hidden md:max-w-5xl xl:max-w-6xl "
+        class="w-full bg-card mx-auto flex flex-col justify-center md:w-fit md:flex-row md:rounded-md md:h-[520px] md:overflow-hidden md:max-w-[960px] xl:max-w-[1056px]"
       >
         <!--Header-->
         <header
-          class="bg-cod-grey p-6 flex flex-col gap-2 md:basis-6 lg:basis-72"
+          class="bg-cod-grey p-6 flex flex-col gap-2 md:shrink-0 md:basis-58 xl:basis-72"
         >
           <img
             src="/pfp.png"
@@ -57,7 +58,9 @@
         </header>
 
         <!--Calendar-->
-        <div class="w-full p-6 flex flex-col flex-1 gap-2">
+        <div
+          class="w-full p-6 flex flex-col flex-1 gap-2 md:border-l md:border-r border-accent"
+        >
           <div class="flex items-center gap-4">
             <p class="mr-auto">
               March <span class="text-muted-foreground">2025</span>
@@ -262,7 +265,9 @@
         </div>
 
         <!-- Time slots -->
-        <div class="w-full p-6 flex flex-col md:basis-60 lg:basis-72 gap-2">
+        <div
+          class="w-full p-6 md:pt-4 md:pb-6 flex flex-col md:basis-58 xl:basis-72 gap-2"
+        >
           <div class="flex items-center gap-4">
             <p class="mr-auto">
               Thu <span class="text-muted-foreground">13</span>
@@ -271,69 +276,76 @@
               class="flex items-center justify-center bg-background rounded-md border border-accent p-1 gap-1"
             >
               <button
-                class="bg-background text-foreground rounded-md px-3 py-0.5 text-sm border border-transparent hover:border-foreground transition"
+                class="bg-background text-foreground rounded-md px-3 py-1 text-sm border border-transparent hover:border-foreground transition"
               >
                 12h
               </button>
               <button
-                class="bg-accent text-foreground rounded-md px-3 py-0.5 text-sm"
+                class="bg-accent text-foreground rounded-md px-3 py-1 text-sm"
               >
                 24h
               </button>
             </div>
           </div>
-          <button
-            class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
-          >
-            9:00
-          </button>
-          <button class="bg-accent rounded-md border border-accent py-1">
-            10:00
-          </button>
-          <button
-            class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
-          >
-            11:00
-          </button>
-          <button
-            class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
-          >
-            12:00
-          </button>
-          <button class="bg-accent rounded-md border border-accent py-1">
-            13:00
-          </button>
-          <button
-            class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
-          >
-            14:00
-          </button>
-          <button class="bg-accent rounded-md border border-accent py-1">
-            15:00
-          </button>
-          <button class="bg-accent rounded-md border border-accent py-1">
-            16:00
-          </button>
-          <button
-            class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
-          >
-            17:00
-          </button>
-          <button
-            class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
-          >
-            18:00
-          </button>
-          <button
-            class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
-          >
-            19:00
-          </button>
-          <button
-            class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
-          >
-            20:00
-          </button>
+          <div class="flex overflow-auto flex-col gap-2.5 text-sm">
+            <button
+              class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
+            >
+              8:00
+            </button>
+            <button
+              class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
+            >
+              9:00
+            </button>
+            <button class="bg-accent rounded-md border border-accent py-1">
+              10:00
+            </button>
+            <button
+              class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
+            >
+              11:00
+            </button>
+            <button
+              class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
+            >
+              12:00
+            </button>
+            <button class="bg-accent rounded-md border border-accent py-1">
+              13:00
+            </button>
+            <button
+              class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
+            >
+              14:00
+            </button>
+            <button class="bg-accent rounded-md border border-accent py-1">
+              15:00
+            </button>
+            <button class="bg-accent rounded-md border border-accent py-1">
+              16:00
+            </button>
+            <button
+              class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
+            >
+              17:00
+            </button>
+            <button
+              class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
+            >
+              18:00
+            </button>
+            <button
+              class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
+            >
+              19:00
+            </button>
+            <button
+              class="bg-background rounded-md border border-accent py-1 hover:border-foreground transition"
+            >
+              20:00
+            </button>
+          </div>
         </div>
       </div>
     </main>
