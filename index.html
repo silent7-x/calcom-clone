@@ -9,7 +9,26 @@
   </head>
 
   <body class="min-h-full bg-background text-foreground">
-    <div class="hidden md:block fixed top-4 items-center gap-4 right-4"></div>
+    <div class="hidden md:flex fixed top-4 items-center gap-4 right-4">
+      <button class="bg-foreground text-background rounded-md px-3 py-1.5">
+        Need Help?
+      </button>
+      <div
+        class="flex items-center justify-center bg-background rounded-md border border-accent p-1 gap-1"
+      >
+        <button
+          class="bg-background rounded-md px-4 py-1 text-sm border border-transparent hover:border-foreground transition"
+        >
+          <i data-lucide="calendar" class="size-4 text-muted-foreground"></i>
+        </button>
+        <button class="bg-accent rounded-md px-3 py-1 text-sm">
+          <i data-lucide="grid-3x3" class="size-4 text-muted-foreground"></i>
+        </button>
+        <button class="bg-background rounded-md px-3 py-1 text-sm">
+          <i data-lucide="columns-3" class="size-4 text-muted-foreground"></i>
+        </button>
+      </div>
+    </div>
     <main
       class="h-screen w-full flex flex-col md:items-center md:justify-center"
     >
@@ -348,6 +367,7 @@
           </div>
         </div>
       </div>
+      <p class="text-xl p-4 self-center">Cal.com</p>
     </main>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
