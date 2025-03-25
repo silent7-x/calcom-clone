@@ -21,7 +21,7 @@ _A clean UI clone of Cal.com built with Tailwind CSS and Vite.js_
 ✅ **TailwindCSS** for modern, utility-first styling  
 ✅ **Vite.js** for fast development & hot module reloading  
 ✅ **Fully responsive** design  
-✅ **Clean and maintainable** code
+✅ **Clean and maintainable codebase**
 
 ## 🔧 Installation & Setup
 
