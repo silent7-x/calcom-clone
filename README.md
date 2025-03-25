@@ -1,3 +1,7 @@
+![Vite](https://img.shields.io/badge/Vite-%23646CFF.svg?logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
+![📱 Responsive](https://img.shields.io/badge/%F0%9F%93%B1%20Responsive-Yes-47C272)
+
 # 📅 Cal.com UI Clone
 
 _A clean UI clone of Cal.com built with Tailwind CSS and Vite.js_
