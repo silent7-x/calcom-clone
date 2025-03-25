@@ -54,6 +54,6 @@ Feel free to contribute! Fork the repo and submit a PR if you have improvements.
 
 ## 📩 Contact
 
-💻 GitHub: [@silen7_x](https://github.com/silent7-x)
+💻 GitHub: [@silen7-x](https://github.com/silent7-x)
 
 🐦 Twitter: [@silen7_x](https://x.com/silen7_x)
